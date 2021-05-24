@@ -35,9 +35,16 @@ class LineComparison {
         dist2 = (Math.sqrt((x4 - x3) * (x4 - x3) + (y4 - y3) * (y4 - y3)));
         System.out.println("Length is " + dist2);
 
-        if (dist1 == dist2)
+        if (dist1 == dist2) {
             System.out.println("The Line is equals");
-        else
+        } else {
             System.out.println("The Line is not equals");
+
+            if (dist1 > dist2) {
+                System.out.println("First line is greater than second line.");
+            } else {
+                System.out.println("Second line is greater than first line.");
+            }
+        }
     }
 }
