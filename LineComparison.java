@@ -37,10 +37,13 @@ class LineComparison {
         System.out.println("Length is " + dist2);
         String l2 = String.valueOf(dist2);
 
-        System.out.println("Lenght of line 1 and line 2  is : " + l1.equals(l2));
-        /*
-         * if (dist1 == dist2) System.out.println("The Line is equals"); else
-         * System.out.println("The Line is not equals");
-         */
+        int length_compare = l1.compareTo(l2);
+
+        if (dist1 == dist2)
+            System.out.println("Length of line L1 is greater than line L2  ");
+        else if (length_compare < 0)
+            System.out.println("Length of line L1 is smaller than line L2  ");
+        else
+            System.out.println("Length of line L1 is equal to line L2  ");
     }
 }
