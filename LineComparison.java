@@ -39,7 +39,7 @@ class LineComparison {
 
         int length_compare = l1.compareTo(l2);
 
-        if (dist1 == dist2)
+        if (length_compare>0)
             System.out.println("Length of line L1 is greater than line L2  ");
         else if (length_compare < 0)
             System.out.println("Length of line L1 is smaller than line L2  ");
