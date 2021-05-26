@@ -19,6 +19,7 @@ class LineComparison {
 
         dist1 = (Math.sqrt((x2 - x1) * (x2 - x1) + (y2 - y1) * (y2 - y1)));
         System.out.println("Length is " + dist1);
+        String l1 = String.valueOf(dist1);
 
         System.out.println("Enter value for x3: ");
         x3 = sc.nextDouble();
@@ -34,17 +35,12 @@ class LineComparison {
 
         dist2 = (Math.sqrt((x4 - x3) * (x4 - x3) + (y4 - y3) * (y4 - y3)));
         System.out.println("Length is " + dist2);
+        String l2 = String.valueOf(dist2);
 
-        if (dist1 == dist2) {
-            System.out.println("The Line is equals");
-        } else {
-            System.out.println("The Line is not equals");
-
-            if (dist1 > dist2) {
-                System.out.println("First line is greater than second line.");
-            } else {
-                System.out.println("Second line is greater than first line.");
-            }
-        }
+        System.out.println("Lenght of line 1 and line 2  is : " + l1.equals(l2));
+        /*
+         * if (dist1 == dist2) System.out.println("The Line is equals"); else
+         * System.out.println("The Line is not equals");
+         */
     }
 }
